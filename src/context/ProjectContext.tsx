@@ -18,46 +18,28 @@ type ProjectContextType = {
   setIsModalOpen: (state: boolean) => void;
   project: IProject | undefined;
   setProject: (project: IProject) => void;
-  handleOk?: () => void;
-  handleCancel?: () => void;
-  showModal?: () => void;
+  handleOk: () => void;
+  handleCancel: () => void;
+  showModal: () => void;
 };
 
-const initialValue = {
-  isModalOpen: false,
-  setIsModalOpen: () => {},
-  project: {
-    repositoryName: '',
-    repositoryUrl: '',
-    hostingUrl: '',
-    imageUrl: '',
-    description: '',
-    usedTechs: [],
-  },
-  setProject: () => {},
-};
-
-export const ProjectContext = createContext<ProjectContextType>(initialValue);
+export const ProjectContext = createContext({} as ProjectContextType);
 
 export const ProjectContextProvider = ({ children }: ProjectContextProps) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [project, setProject] = useState<IProject>();
 
   const showModal = () => {
-    setIsModalOpen(true);
+    return setIsModalOpen(true);
   };
 
   const handleOk = () => {
-    setIsModalOpen(false);
-    console.log('modal fechando com OK: ' + isModalOpen);
+    return setIsModalOpen(false);
   };
 
   const handleCancel = () => {
-    setIsModalOpen(false);
-    console.log('modal fechando com cancel: ' + isModalOpen);
+    return setIsModalOpen(false);
   };
-
-  console.log(isModalOpen);
 
   return (
     <ProjectContext.Provider

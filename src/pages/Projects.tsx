@@ -10,11 +10,11 @@ export const Projects = () => {
       </h1>
       <hr className="w-[80%]" />
 
-      <div className="flex items-center justify-center flex-wrap p-2 gap-3  w-full h-full overflow-scroll">
+      <div className="flex items-center justify-center flex-wrap p-2 gap-3 w-full h-full overflow-scroll">
         {projects.map((project, index) => {
           return (
             <ProjectCard
-              key={index}
+              key={project.repositoryUrl}
               repositoryName={project.repositoryName}
               repositoryUrl={project.repositoryUrl}
               hostingUrl={project.hostingUrl}
