@@ -25,9 +25,8 @@ const handleClick = () => {};
 export const LayoutPage = ({ children }: PropsLayout) => {
   const [theme, setTheme] = useState();
   return (
-    <Layout>
-      <Layout>
-        <Sider className="bg-background hidden laptop:flex laptop:justify-center laptop:items-center laptop:text-white">
+    <Layout className="h-[100vh]">
+        <Sider className="bg-background hidden laptop:flex laptop:justify-center laptop:items-center laptop:text-white z-10">
           <div className="flex flex-col h-full gap-5 items-center justify-center w-full py-4">
             <Avatar />
 
@@ -65,11 +64,10 @@ export const LayoutPage = ({ children }: PropsLayout) => {
             })}
           </div>
         </Sider>
-        <Drawer className="block bg-background laptop:hidden" />
-        <Content className="bg-background min-h-[100vh] flex items-center justify-center">
+        <Drawer />
+        <Content className="bg-background min-h-fit flex items-center justify-center overflow-scroll border-solid">
           {children}
         </Content>
       </Layout>
-    </Layout>
   );
 };

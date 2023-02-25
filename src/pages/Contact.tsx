@@ -30,7 +30,7 @@ export const Contact = () => {
   const { TextArea } = Input;
 
   return (
-    <div className="border-solid flex flex-col gap-2 items-center w-full justify-center bg-white text-black h-full">
+    <div className="flex flex-col gap-2 items-center w-full justify-center bg-white text-black h-full">
       <h1 className="text-2xl py-3 text-center w-full text-mainColor">
         Contato
       </h1>

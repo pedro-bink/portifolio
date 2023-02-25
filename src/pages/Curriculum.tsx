@@ -7,7 +7,7 @@ type Props = {};
 
 const Curriculum = (props: Props) => {
   return (
-    <div className=" flex p-4 bg-white flex-col items-center justify-center gap-4 w-full overflow-scroll">
+    <div className="flex p-4 bg-white flex-col items-center justify-center gap-4 w-full min-h-fit">
       <div className="flex gap-5 items-center justify-center">
         <h1 className="text-2xl py-3 text-center w-full text-mainColor">
           Currículo

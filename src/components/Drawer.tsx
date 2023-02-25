@@ -12,9 +12,8 @@ import { Link } from 'react-router-dom';
 import { Avatar } from './Avatar';
 import { SocialMedia } from './SocialMedia';
 
-interface DrawerProps extends Partial<Pick<HTMLDivElement, 'className'>> {}
 
-export const Drawer: FunctionComponent<DrawerProps> = ({ className }) => {
+export const Drawer = () => {
   const [open, setOpen] = useState(false);
 
   const showDrawer = () => {
@@ -26,7 +25,7 @@ export const Drawer: FunctionComponent<DrawerProps> = ({ className }) => {
   };
 
   return (
-    <div className={className}>
+    <div className="block bg-background laptop:hidden">
       <div className="p-4 border-2 cursor-pointer" onClick={showDrawer}>
         <MenuOutlined
           style={{ color: 'white', fontWeight: '700' }}
