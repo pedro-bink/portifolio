@@ -1,11 +1,15 @@
+import MiniblogPreview from '../assets/miniblog-preview.png';
+import SecretwordPreview from '../assets/secretword-preview.png';
+import DoggyPreview from '../assets/doggy-preview.png';
+import PokemonPreview from '../assets/pokemon-app-preview.png';
+import TodoPreview from '../assets/todo-ts-preview.png';
+
 const PROJECTS = [
   {
     repositoryName: 'Todo-ts',
     repositoryUrl: 'https://github.com/pedro-bink/todo-ts',
     hostingUrl: 'https://todo-aerb6or5i-pedro-bink.vercel.app',
-    imageUrl: await import('../assets/todo-ts-preview.png').then(
-      (image) => image.default as string,
-    ),
+    imageUrl: TodoPreview,
     description:
       'Todo-app feito com react e typescript. Nessa aplicação é possível adicionar, remover e marcar como feito as tarefas.',
     usedTechs: [
@@ -20,9 +24,7 @@ const PROJECTS = [
     repositoryName: 'Pokemon-app',
     repositoryUrl: 'https://github.com/pedro-bink/pokemon-app',
     hostingUrl: 'https://pokemon-app.vercel.app/',
-    imageUrl: await import('../assets/pokemon-app-preview.png').then(
-      (image) => image.default as string,
-    ),
+    imageUrl: PokemonPreview,
     description:
       'Pokemon-app feito com Vuejs e javascript. A aplicação consome a api do pokemon e permite ao usuário pesquisar o Pokémon desejado pelo nome ou Id e ver as informações dele.',
     usedTechs: [
@@ -35,9 +37,7 @@ const PROJECTS = [
     repositoryName: 'Plano meu pet',
     repositoryUrl: '',
     hostingUrl: 'https://doggy-silk.vercel.app/',
-    imageUrl: await import('../assets/doggy-preview.png').then(
-      (image) => image.default as string,
-    ),
+    imageUrl: DoggyPreview,
     description:
       'Plano meu pet, aplicação feita em React e Javascript. A aplicação se trata de um quiz onde o usuário responde diversas perguntas sobre seu cão e tem um plano de treinamento feito exclusivamente para ele.',
     usedTechs: [
@@ -50,9 +50,7 @@ const PROJECTS = [
     repositoryName: 'Secret-word',
     repositoryUrl: 'https://github.com/pedro-bink/react-secretWord',
     hostingUrl: '',
-    imageUrl: await import('../assets/secretword-preview.png').then(
-      (image) => image.default as string,
-    ),
+    imageUrl: SecretwordPreview,
     description:
       'Secret-word, aplicação feita em React e Javascript. A aplicação se trata de um jogo onde o usuário tem que adivinhar a palavra secreta. Este projeto foi feito para praticar o uso de hooks e context api.',
     usedTechs: [
@@ -65,9 +63,7 @@ const PROJECTS = [
     repositoryName: 'Mini-blog',
     repositoryUrl: 'https://github.com/pedro-bink/mini-blog',
     hostingUrl: '',
-    imageUrl: await import('../assets/miniblog-preview.png').then(
-      (image) => image.default as string,
-    ),
+    imageUrl: MiniblogPreview,
     description:
       'Aplicação feita em React e Javascript. A aplicação se trata de um blog onde o usuário pode criar, editar e deletar posts. O backend foi desenvolvido em C# com o framework .NET Core, utilizando JWT, Entity Framework, MySql e Identity.',
     usedTechs: [
