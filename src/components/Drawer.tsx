@@ -12,7 +12,6 @@ import { Link } from 'react-router-dom';
 import { Avatar } from './Avatar';
 import { SocialMedia } from './SocialMedia';
 
-
 export const Drawer = () => {
   const [open, setOpen] = useState(false);
 
@@ -25,7 +24,7 @@ export const Drawer = () => {
   };
 
   return (
-    <div className="block bg-background laptop:hidden">
+    <div className="block  bg-background laptop:hidden">
       <div className="p-4 border-2 cursor-pointer" onClick={showDrawer}>
         <MenuOutlined
           style={{ color: 'white', fontWeight: '700' }}
@@ -50,7 +49,7 @@ export const Drawer = () => {
         }
       >
         <div className="flex flex-col gap-4 w-full h-full justify-center items-center">
-          <Avatar />
+          <Avatar size={120} />
           <div>
             <span className="text-center text-mainColor text-2xl font-bold">
               Pedro Henrique

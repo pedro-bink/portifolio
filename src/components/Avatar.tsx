@@ -1,12 +1,16 @@
 import { Avatar as AvatarAntd } from 'antd';
 import React from 'react';
 
-export const Avatar: React.FC = () => (
+type AvatarProps = {
+  size: number;
+};
+
+export const Avatar = ({ size }: AvatarProps) => (
   <div className="w-full flex ">
     <AvatarAntd
-      size={120}
+      size={size}
       className="mx-auto border-2 border-white"
-      src={'/fuher_baiano.jpg'}
+      src={'/pedro.jpeg'}
     />
   </div>
 );

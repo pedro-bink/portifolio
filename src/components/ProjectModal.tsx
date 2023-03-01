@@ -1,21 +1,10 @@
-import binkchique from '../assets/binkchique.jpg';
-import { Button, Modal } from 'antd';
-import { PropsRepositoryCard } from './ProjectCard';
-import { useState } from 'react';
+import { Modal } from 'antd';
 import { useProjectContextProvider } from '../context/ProjectContext';
 import ButtonsComponent from './ButtonsComponent';
 import { CloseOutlined } from '@ant-design/icons';
 
-// type ProjectModalProps = {
-//   isModalOpen: boolean;
-//   setIsModalOpen: (value: boolean) => void;
-//   project: PropsRepositoryCard | undefined;
-// };
-
 const ProjectModal = () => {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
   const { project, isModalOpen, handleCancel } = useProjectContextProvider();
-  console.log(project?.usedTechs);
   return (
     <Modal
       open={isModalOpen}
@@ -28,7 +17,7 @@ const ProjectModal = () => {
         <div className="flex flex-col items-center justify-center gap-2 p-1  w-full tablet:flex-row">
           <div className="w-[50%] flex flex-col items-center">
             <img
-              src={binkchique}
+              src={project?.imageUrl}
               alt="project_image"
               className="h-full w-full max-w-[300px] hidden tablet:flex "
             />

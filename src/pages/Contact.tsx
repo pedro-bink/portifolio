@@ -30,29 +30,25 @@ export const Contact = () => {
   const { TextArea } = Input;
 
   return (
-    <div className="flex flex-col gap-2 items-center w-full justify-center bg-white text-black h-full">
-      <h1 className="text-2xl py-3 text-center w-full text-mainColor">
-        Contato
-      </h1>
+    <div className="bg-white text-black flex gap-1 flex-col w-full h-full items-center p-2 tablet:h-full max-h-screen">
+      <h1 className="text-2xl py-3 text-mainColor">Contato</h1>
       <hr className="w-[80%]" />
 
-      <div className="p-4 flex flex-col items-center justify-evenly gap-2 w-full h-full text-base tablet:text-2xl tablet:flex-row">
-        <div className="h-full flex flex-col items-center text-xl w-full justify-evenly gap-2 tablet:max-w-[500px] tablet:text tablet:p-3">
+      <div className="p-4 flex flex-col items-center tablet:justify-evenly gap-2 w-full h-full text-base tablet:text-2xl tablet:flex-row">
+        <div className="h-full flex flex-col items-center text-xl w-full justify-evenly gap-2 tablet:max-w-[500px] tablet:p-3">
           <div className="flex flex-col gap-6">
             <InfoCard
-              component={<MailOutlined className="text-3xl tablet:text-4xl " />}
+              component={<MailOutlined className="text-3xl tablet:text-4xl" />}
               label="E-mail"
               text="phdss04@gmail.com"
             />
             <InfoCard
-              component={
-                <PhoneOutlined className="text-3xl tablet:text-4xl " />
-              }
+              component={<PhoneOutlined className="text-3xl tablet:text-4xl" />}
               label="Telefone"
               text="38984271999"
             />
             <InfoCard
-              component={<HomeOutlined className="text-3xl tablet:text-4xl " />}
+              component={<HomeOutlined className="text-3xl tablet:text-4xl" />}
               label="Endereço"
               text="Pirapora - Minas Gerais"
             />

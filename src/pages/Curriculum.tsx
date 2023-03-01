@@ -3,11 +3,9 @@ import Education from '../components/Education';
 import ProfessionalExperience from '../components/ProfessionalExperience';
 import CV from '../assets/resumePedro.pdf';
 
-type Props = {};
-
-const Curriculum = (props: Props) => {
+const Curriculum = () => {
   return (
-    <div className="flex p-4 bg-white flex-col items-center justify-center gap-4 w-full min-h-fit">
+    <div className="text-black flex gap-1 flex-col w-full h-full items-center p-2">
       <div className="flex gap-5 items-center justify-center">
         <h1 className="text-2xl py-3 text-center w-full text-mainColor">
           Currículo
