@@ -130,7 +130,7 @@ export const Contact = () => {
           <input
             type="hidden"
             name="_next"
-            value="http://localhost:5173/contact"
+            value="https://portfolio-blond-nine-83.vercel.app/contact"
           />
         </form>
       </div>
