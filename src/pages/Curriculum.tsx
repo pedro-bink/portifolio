@@ -11,7 +11,7 @@ const Curriculum = () => {
           Currículo
         </h1>
 
-        <a href={CV}>
+        <a href={CV} target="blank">
           <DownloadOutlined />
         </a>
       </div>

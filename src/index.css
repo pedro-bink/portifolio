@@ -12,10 +12,6 @@ a {
   text-decoration: none !important;
 }
 
-:root {
-  background-color: #98c1d9 !important;
-}
-
 .gradient_header_footer {
   background: rgb(123, 155, 175) !important;
   background: radial-gradient(

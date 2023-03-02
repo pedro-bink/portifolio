@@ -1,13 +1,5 @@
-import {
-  GithubOutlined,
-  HomeOutlined,
-  LinkedinOutlined,
-  MailOutlined,
-  PhoneOutlined,
-  TwitterOutlined,
-} from '@ant-design/icons';
+import { HomeOutlined, MailOutlined, PhoneOutlined } from '@ant-design/icons';
 import { useForm, SubmitHandler } from 'react-hook-form';
-import { SocialMedia } from '../components/SocialMedia';
 import { Input, Button } from 'antd';
 import InfoCard from '../components/InfoCard';
 
@@ -15,18 +7,16 @@ type Inputs = {
   name: string;
   email: string;
   subject: string;
+  message: string;
 };
 
 export const Contact = () => {
   const {
     register,
-    handleSubmit,
     reset,
     formState: { errors },
   } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    reset();
-  };
+
   const { TextArea } = Input;
 
   return (
@@ -56,7 +46,8 @@ export const Contact = () => {
         </div>
 
         <form
-          onSubmit={handleSubmit(onSubmit)}
+          action="https://formsubmit.co/phdss04@gmail.com"
+          method="POST"
           className="flex flex-col items-center justify-center gap-4 border-2 w-full h-full tablet:p-3"
         >
           <label
@@ -123,6 +114,7 @@ export const Contact = () => {
               className="p-2 max-w-[300px] w-full tablet:max-w-[500px] placeholder:font-bold"
               rows={4}
               placeholder="Mensagem"
+              {...register('message', { required: true })}
             />
           </label>
 
@@ -135,6 +127,11 @@ export const Contact = () => {
               Enviar mensagem
             </Button>
           </div>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://localhost:5173/contact"
+          />
         </form>
       </div>
     </div>
