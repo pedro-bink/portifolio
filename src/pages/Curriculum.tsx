@@ -65,7 +65,7 @@ const Curriculum = () => {
 
             <div className="resume_item">
               <Education
-                course="Técnico em informática informação"
+                course="Técnico em informática"
                 date="Concluído"
                 institution="Instituto Federal do Norte de Minas Gerais"
               />
