@@ -1,7 +1,7 @@
 import { DownloadOutlined } from '@ant-design/icons';
 import Education from '../components/Education';
 import ProfessionalExperience from '../components/ProfessionalExperience';
-import CV from '../assets/resumePedro.pdf';
+import CV from '../assets/PedroCurriculo.pdf';
 
 const Curriculum = () => {
   return (
