@@ -3,6 +3,7 @@ import SecretwordPreview from '../assets/secretword-preview.png';
 import DoggyPreview from '../assets/doggy-preview.png';
 import PokemonPreview from '../assets/pokemon-app-preview.png';
 import TodoPreview from '../assets/todo-ts-preview.png';
+import IgniteFeedPreview from '../assets/ignite-feed-preview.png';
 
 const PROJECTS = [
   {
@@ -70,6 +71,22 @@ const PROJECTS = [
       'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg',
       'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/csharp/csharp-original.svg',
       'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/dotnetcore/dotnetcore-plain.svg',
+    ],
+  },
+  {
+    repositoryName: 'Ignite-feed',
+    repositoryUrl: 'https://github.com/pedro-bink/react-ignite-feed',
+    hostingUrl: 'https://react-ignite-feed-nu.vercel.app/login',
+    imageUrl: IgniteFeedPreview,
+    description:
+      'Aplicação feita em React e Typescript. A aplicação se trata de um feed onde o usuário pode criar posts e interagir com postagens de outros usuários. O backend foi desenvolvido em nodejs utilizando o framework express, possui autenticação e autorização com JWT, além de utilizar o supabase como serviço de banco de dados.',
+    usedTechs: [
+      'https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/react/react-original.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
+      'https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg'
     ],
   },
 ];
