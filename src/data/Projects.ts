@@ -8,8 +8,8 @@ import IgniteFeedPreview from '../assets/ignite-feed-preview.png';
 const PROJECTS = [
   {
     repositoryName: 'Todo-ts',
-    repositoryUrl: 'https://github.com/pedro-bink/todo-ts',
-    hostingUrl: 'https://todo-aerb6or5i-pedro-bink.vercel.app',
+    repositoryUrl: 'https://github.com/pedro-santos28/todo-ts',
+    hostingUrl: 'https://todo-ts-ochre.vercel.app/login',
     imageUrl: TodoPreview,
     description:
       'Todo-app feito com react e typescript. Nessa aplicação é possível adicionar, remover e marcar como feito as tarefas.',
@@ -23,7 +23,7 @@ const PROJECTS = [
   },
   {
     repositoryName: 'Pokemon-app',
-    repositoryUrl: 'https://github.com/pedro-bink/pokemon-app',
+    repositoryUrl: 'https://github.com/pedro-santos28/pokemon-app',
     hostingUrl: 'https://pokemon-app.vercel.app/',
     imageUrl: PokemonPreview,
     description:
@@ -49,7 +49,7 @@ const PROJECTS = [
   },
   {
     repositoryName: 'Secret-word',
-    repositoryUrl: 'https://github.com/pedro-bink/react-secretWord',
+    repositoryUrl: 'https://github.com/pedro-santos28/react-secretWord',
     hostingUrl: '',
     imageUrl: SecretwordPreview,
     description:
@@ -62,7 +62,7 @@ const PROJECTS = [
   },
   {
     repositoryName: 'Mini-blog',
-    repositoryUrl: 'https://github.com/pedro-bink/mini-blog',
+    repositoryUrl: 'https://github.com/pedro-santos28/mini-blog',
     hostingUrl: '',
     imageUrl: MiniblogPreview,
     description:
@@ -75,7 +75,7 @@ const PROJECTS = [
   },
   {
     repositoryName: 'Ignite-feed',
-    repositoryUrl: 'https://github.com/pedro-bink/react-ignite-feed',
+    repositoryUrl: 'https://github.com/pedro-santos28/react-ignite-feed',
     hostingUrl: 'https://react-ignite-feed-nu.vercel.app/login',
     imageUrl: IgniteFeedPreview,
     description:
